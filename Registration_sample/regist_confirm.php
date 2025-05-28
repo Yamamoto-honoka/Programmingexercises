@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang = "ja">
     <head>
-        <meta charset="UTF-8">
+        <meta charset = "UTF-8">
         <title>diworksblog 掲示板</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel = "stylesheet" type = "text/css" href = "style2.css">
     </head>
     <body>
-    <div class="logo"><img src="diblog_logo.jpg"></div>
+    <div class = "logo"><img src="diblog_logo.jpg"></div>
     <header>
         <ul>
-            <li><a href="index.html">トップ</a></li>
+            <li><a href = "index.html">トップ</a></li>
             <li>プロフィール</li>
             <li>D.I.Blogについて</li>
             <li>登録フォーム</li>
@@ -68,9 +68,54 @@
             <?php echo $_POST['authority'];?>
             </p>
 
-
+            <form action = "regist.php">
+                <input type = "submit" class = "button1" 
+                       value = "前に戻る">
+            </form>
+            
+            <form action = "regist_complete.php">
+                <input type = "submit" class = "button2"
+                       value = "登録する">
+                <input type = "hidden" 
+                value = "<?php echo $_POST['family_name'];?>"
+                name = "family_name">
+                <input type = "hidden"
+                value = "<?php echo $_POST['last_name'];?>"
+                name = "last_name">
+                <input type = "hidden"
+                value = "<?php echo $_POST['family_name_kana'];?>"
+                name = "family_name_kana">
+                <input type = "hidden"
+                value = "<?php echo $_POST['last_name_kana'];?>"
+                name = "last_name_kana">
+                <input type = "hidden"
+                value = "<?php echo $_POST['mail'];?>"
+                name = "mail">
+                <input type = "hidden"
+                value = "<?php echo $_POST['password'];?>"
+                name = "password">
+                <input type = "hidden"
+                value = "<?php echo $_POST['gender'];?>"
+                name = "gender">
+                <input type = "hidden"
+                value = "<?php echo $_POST['postal_code'];?>"
+                name = "postal_code">
+                <input type = "hidden"
+                value = "<?php echo $_POST['prefecture'];?>"
+                name = "prefecture">
+                <input type = "hidden"
+                value = "<?php echo $_POST['address_1'];?>"
+                name = "address_1">
+                <input type = "hidden"
+                value = "<?php echo $_POST['address_2'];?>"
+                name = "address_2">
+                <input type = "hidden"
+                value = "<?php echo $_POST['authority'];?>"
+                name = "authority">
+            </form>
+        </div>
     <footer>
         Copyright D.I.works D.I.blog is the one which provides A to Z about programming
     </footer>
-    </body>
+        </body>
 </html>
