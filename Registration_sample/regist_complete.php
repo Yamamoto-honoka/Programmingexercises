@@ -1,8 +1,8 @@
 <?php
 mb_internal_encoding("utf8");
-$pdo = new PDO("mtsql:dbname = programingexe;host = localhost;",
+$pdo = new PDO("mysql:dbname=programingexe01;host=localhost;",
                "root","");
-$pdo -> exec("insert into (family_name, last_name, family_name_kana, last_name_kana, mail, password, gender, postal_code, prefecture, address_1, address_2, authority)
+$pdo -> exec("insert into userregistration(family_name, last_name, family_name_kana, last_name_kana, mail, password, gender, postal_code, prefecture, address_1, address_2, authority)
 values(
 '".$_POST['family_name']."',
 '".$_POST['last_name']."',
@@ -12,10 +12,11 @@ values(
 '".$_POST['password']."',
 '".$_POST['gender']."',
 '".$_POST['postal_code']."',
-'".$_POST['prefecture']"',
+'".$_POST['prefecture']."',
 '".$_POST['address_1']."',
 '".$_POST['address_2']."',
-'"$_POST['authority']."');");
+'".$_POST['authority']."');
+");
 ?>
 
 <!DOCTYPE html>
