@@ -30,9 +30,9 @@ values(
         </ul>
     </header>
     <h1>アカウント登録完了画面</h1>
-        <div class="comfirm">
+        <div class="complete">
         <p>登録完了しました。</p>
-        <button onclick="index.html">TOPページへ戻る</button>
+        <button onclick="location.href='./index.html'">TOPページへ戻る</button>
         </div>
     <footer>
         Copyright D.I.works D.I.blog is the one which provides A to Z about programming
