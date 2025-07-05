@@ -70,15 +70,15 @@
 
             <form action = "regist.php">
                 <input type = "submit" class = "button1" 
-                       value = "前に戻る">
+                    onclick="history.back()" value = "前に戻る">
             </form>
             
             <form action = "regist_complete.php">
                 <input type = "submit" class = "button2"
                        value = "登録する">
-                <input type = "hidden" 
+                <input type = "hidden"
                 value = "<?php echo $_POST['family_name'];?>"
-                name = "family_name">
+                name ="family_name">
                 <input type = "hidden"
                 value = "<?php echo $_POST['last_name'];?>"
                 name = "last_name">

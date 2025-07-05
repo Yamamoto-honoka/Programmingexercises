@@ -29,38 +29,8 @@ h1{
 	border-left: 5px solid gray;
 	border-bottom: 2px solid gray;
 }
-
-form{
-    float: left;
-    margin-right: 15px;
-}
-form div{
-    padding: 15px;
-}
-.regist{
-    width: fit-content;
-    margin: auto;
-}
-.button1{
-    border: 1px soild lightgray;
-    padding: 4px 10px;
-    color: white;
-    background-color: #bfbfbf;
-    border-radius: 5px;
-    border-bottom: soild 2px gray;
-}
-
-.button2{
-    border: 1px soild lightgray;
-    padding: 4px 10px;
-    color: white;
-    background-color: darkorange;
-    border-radius: 5px;
-    border-bottom: 2px solid #E08600;
-}
 .complete{
     margin: 0 auto;
-    border-radius: 100px;
     width: 450px;
     padding-top: 20px;
     padding-left: 20px;

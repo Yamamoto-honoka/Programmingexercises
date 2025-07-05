@@ -14,7 +14,7 @@ values(
     <head>
         <meta charset="UTF-8">
         <title>diworksblog 掲示板</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel = "stylesheet" type = "text/css" href = "style3.css">
     </head>
     <body>
     <div class="logo"><img src="diblog_logo.jpg"></div>
@@ -31,7 +31,7 @@ values(
     </header>
     <h1>アカウント登録完了画面</h1>
         <div class="complete">
-        <p>登録完了しました。</p>
+            <p><b>登録完了しました。</b></p>
         <button onclick="location.href='./index.html'">TOPページへ戻る</button>
         </div>
     <footer>
