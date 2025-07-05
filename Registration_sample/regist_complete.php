@@ -7,6 +7,7 @@ family_name)
 values(
 '".$_POST['family_name']."');
 ");
+var_dump(['family_name']);
 ?>
 
 <!DOCTYPE html>
