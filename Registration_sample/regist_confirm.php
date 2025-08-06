@@ -73,7 +73,7 @@
                     onclick="history.back()" value = "前に戻る">
             </form>
             
-            <form action = "regist_complete.php">
+            <form action = "regist_complete.php" method="post">
                 <input type = "submit" class = "button2"
                        value = "登録する">
                 <input type = "hidden"
@@ -119,3 +119,6 @@
     </footer>
         </body>
 </html>
+<!--
+課題→パスワードのハッシュ化と●表示、性別・アカウント権限の選択肢表示、登録処理のエラー画面、戻るボタンを押した際の入力情報の保持
+-->

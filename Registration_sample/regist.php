@@ -57,7 +57,7 @@
         </div>
         <div>
             <label>パスワード</label>
-            <input type="password" class="text" size="35"
+            <input type="text" class="text" size="35"
             maxlength="100" name="password"
             pattern="^[0-9A-Za-z]+$"
             required>
@@ -159,3 +159,4 @@
     </footer>
     </body>
 </html>
+<!--課題→エラーチェックとエラーメッセージ表示-->
