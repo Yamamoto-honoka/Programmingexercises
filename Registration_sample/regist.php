@@ -58,7 +58,7 @@
         <div>
             <label>パスワード</label>
             <input type="text" class="text" size="35"
-            maxlength="100" name="password"
+            maxlength="10" name="password"
             pattern="^[0-9A-Za-z]+$"
             required>
         </div>
