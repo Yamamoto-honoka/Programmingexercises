@@ -58,15 +58,7 @@ form div{
     border-radius: 5px;
     border-bottom: 2px solid #E08600;
 }
-.complete{
-    margin: 0 auto;
-    border-radius: 100px;
-    width: 450px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 60px;
-}
+
 footer{
 	clear: both;
 	width: 100%;

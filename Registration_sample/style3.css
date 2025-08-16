@@ -32,10 +32,8 @@ h1{
 .complete{
     margin: 0 auto;
     width: 450px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 60px;
+    text-align: center;
+    padding: 100px 130px 130px 100px;
 }
 footer{
     position: absolute;

@@ -69,7 +69,7 @@
             </p>
 
             <form action = "regist.php">
-                <input type = "submit" class = "button1" 
+                <input type = "button" class = "button1" 
                     onclick="history.back()" value = "前に戻る">
             </form>
             
@@ -120,5 +120,5 @@
         </body>
 </html>
 <!--
-課題→パスワードのハッシュ化と●表示、性別・アカウント権限の選択肢表示、登録処理のエラー画面、戻るボタンを押した際の入力情報の保持
+課題→パスワードのハッシュ化と●表示、性別・アカウント権限の選択肢表示、登録処理のエラー表示
 -->
