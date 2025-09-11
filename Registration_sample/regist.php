@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <title>diworksblog 掲示板</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+            
+        </script>
     </head>
     <body>
     <div class="logo"><img src="diblog_logo.jpg"></div>
@@ -159,4 +162,4 @@
     </footer>
     </body>
 </html>
-<!--課題→エラーチェックとエラーメッセージ表示-->
+<!--課題→エラーチェックとエラーメッセージ表示→JavaScriptで解決できるっぽい。-->
