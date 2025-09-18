@@ -41,7 +41,10 @@
             </p>
             
             <p>パスワード
-            <?php echo $_POST['password'];?>
+            <?php
+            $password="password";
+            $hashed_password=password_hash($password,PASSWORD_DEFAULT);
+            echo $hashed_password;?>
             </p>
             
             <p>性別
@@ -92,7 +95,7 @@
                 value = "<?php echo $_POST['mail'];?>"
                 name = "mail">
                 <input type = "hidden"
-                value = "<?php echo $_POST['password'];?>"
+                value = "<?php echo $hashed_password;?>"
                 name = "password">
                 <input type = "hidden"
                 value = "<?php echo $_POST['gender'];?>"
@@ -120,7 +123,7 @@
         </body>
 </html>
 <!--
-課題→パスワードのハッシュ化と●表示→password_hash(PHPの関数)で解決？、
+課題→パスワードの●表示→password_hash(PHPの関数)で解決？、
 性別・アカウント権限の選択肢表示、
 登録処理のエラー表示
 -->
