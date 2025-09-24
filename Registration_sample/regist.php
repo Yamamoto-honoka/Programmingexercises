@@ -4,9 +4,6 @@
         <meta charset="UTF-8">
         <title>diworksblog 掲示板</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript">
-            
-        </script>
     </head>
     <body>
     <div class="logo"><img src="diblog_logo.jpg"></div>
@@ -157,6 +154,9 @@
             <button onclick="http://localhost/Registration_sample/regist_confirm.php">確認する</button>
         </div>
     </form>
+    <script>
+        function blank_alert
+    </script>
     <footer>
         Copyright D.I.works D.I.blog is the one which provides A to Z about programming
     </footer>

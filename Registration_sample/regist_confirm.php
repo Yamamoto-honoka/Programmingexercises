@@ -44,11 +44,18 @@
             <?php
             $password="password";
             $hashed_password=password_hash($password,PASSWORD_DEFAULT);
-            echo $hashed_password;?>
+            echo "●●●●●●●●●●";?>
             </p>
             
             <p>性別
-            <?php echo $_POST['gender'];?>
+            <?php
+            $gender="gender";
+            if($gender=0){
+                echo "男";
+            }elseif($gender=1){
+                echo "女";
+            }
+            ?>
             </p>
             
             <p>郵便番号
@@ -68,7 +75,14 @@
             </p>
             
             <p>アカウント権限
-            <?php echo $_POST['authority'];?>
+            <?php
+            $authority="authority";
+            if($authority=0){
+                echo "一般";
+            }elseif($authority=1){
+                echo "管理者";
+            }
+            ?>
             </p>
 
             <form action = "regist.php">
@@ -123,7 +137,6 @@
         </body>
 </html>
 <!--
-課題→パスワードの●表示→password_hash(PHPの関数)で解決？、
-性別・アカウント権限の選択肢表示、
+課題→
 登録処理のエラー表示
 -->
