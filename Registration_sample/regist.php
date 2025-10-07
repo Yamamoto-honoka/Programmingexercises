@@ -19,13 +19,15 @@
         </ul>
     </header>
     <h1>アカウント登録画面</h1>
-    <form class="regist" method="post" action="regist_confirm.php">
+    <form class="regist" method="post" action="http://localhost/Registration_sample/regist_confirm.php"
+    onsubmit="return subform()">
         <div>
             <label>名前(姓)</label>
             <input type="text" class="text" size="35"
             maxlength="10" name="family_name"
             pattern="[\u4E00-\u9FFF\u3040-\u309Fー]*"
             required>
+            <div id="EM01" class="message"></div>
         </div>
         <div>
             <label>名前(名)</label>
@@ -150,13 +152,11 @@
                     <option value="1">管理者</option>
                 </select>
         </div>
-        <div>
-            <button onclick="http://localhost/Registration_sample/regist_confirm.php">確認する</button>
+        <div id="submit">
+            <input type="submit" value="確認する"/>
         </div>
     </form>
-    <script>
-        function blank_alert
-    </script>
+    <script src="error01.js"></script>
     <footer>
         Copyright D.I.works D.I.blog is the one which provides A to Z about programming
     </footer>
