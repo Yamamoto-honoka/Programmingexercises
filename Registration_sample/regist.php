@@ -27,7 +27,11 @@
             maxlength="10" name="family_name"
             pattern="[\u4E00-\u9FFF\u3040-\u309Fー]*"
             required>
-            <div id="EM01" class="message"></div>
+            <?php
+                if(isset($_POST["family_name"])){
+                    echo "名前(姓)を入力してください";
+                }
+            ?>
         </div>
         <div>
             <label>名前(名)</label>
@@ -156,7 +160,6 @@
             <input type="submit" value="確認する"/>
         </div>
     </form>
-    <script src="error01.js"></script>
     <footer>
         Copyright D.I.works D.I.blog is the one which provides A to Z about programming
     </footer>

@@ -44,7 +44,9 @@
             <?php
             $password="password";
             $hashed_password=password_hash($password,PASSWORD_DEFAULT);
-            echo "●●●●●●●●●●";?>
+            $text_lehgth=mb_strlen($password);
+            echo  str_repeat("●",$text_lehgth);
+            ?>
             </p>
             
             <p>性別
