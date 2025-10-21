@@ -42,10 +42,10 @@
             
             <p>パスワード
             <?php
-            $password="password";
+            $password=$_POST['password'];
             $hashed_password=password_hash($password,PASSWORD_DEFAULT);
             $text_lehgth=mb_strlen($password);
-            echo  str_repeat("●",$text_lehgth);
+            echo str_repeat("●",$text_lehgth);
             ?>
             </p>
             
@@ -140,5 +140,7 @@
 </html>
 <!--
 課題→
+性別が登録は0なのに女で表示されるのをなおす
+パスワードハッシュ化できないのなおす
 登録処理のエラー表示
 -->

@@ -27,11 +27,6 @@
             maxlength="10" name="family_name"
             pattern="[\u4E00-\u9FFF\u3040-\u309Fー]*"
             required>
-            <?php
-                if(isset($_POST["family_name"])){
-                    echo "名前(姓)を入力してください";
-                }
-            ?>
         </div>
         <div>
             <label>名前(名)</label>
