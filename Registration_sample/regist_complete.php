@@ -1,4 +1,8 @@
 <?php
+$password=$_POST['password'];
+$hashed_password = password_hash($password,PASSWORD_DEFAULT);
+?>
+<?php
 mb_internal_encoding("utf8");
 $pdo = new PDO("mysql:dbname=programingexe01;host=localhost;",
                "root","");
@@ -21,7 +25,7 @@ values(
 '".$_POST['family_name_kana']."',
 '".$_POST['last_name_kana']."',
 '".$_POST['mail']."',
-'".$_POST['password']."',
+'".$hashed_password."',
 '".$_POST['gender']."',
 '".$_POST['postal_code']."',
 '".$_POST['prefecture']."',
@@ -62,6 +66,7 @@ values(
     </footer>
     </body>
 </html>
-<!--課題→レイアウトを近づける→css編集
+<!--課題→
+レイアウトを近づける→css編集
 削除フラグを入れる→日付と同じくSQL側で解決？
 -->

@@ -43,7 +43,6 @@
             <p>パスワード
             <?php
             $password=$_POST['password'];
-            $hashed_password=password_hash($password,PASSWORD_DEFAULT);
             $text_lehgth=mb_strlen($password);
             echo str_repeat("●",$text_lehgth);
             ?>
@@ -51,10 +50,10 @@
             
             <p>性別
             <?php
-            $gender="gender";
-            if($gender=0){
+            $gender=$_POST['gender'];
+            if($gender==0){
                 echo "男";
-            }elseif($gender=1){
+            }elseif($gender==1){
                 echo "女";
             }
             ?>
@@ -78,10 +77,10 @@
             
             <p>アカウント権限
             <?php
-            $authority="authority";
-            if($authority=0){
+            $authority=$_POST['authority'];
+            if($authority==0){
                 echo "一般";
-            }elseif($authority=1){
+            }elseif($authority==1){
                 echo "管理者";
             }
             ?>
@@ -111,7 +110,7 @@
                 value = "<?php echo $_POST['mail'];?>"
                 name = "mail">
                 <input type = "hidden"
-                value = "<?php echo $hashed_password;?>"
+                value = "<?php echo $_POST['password'];?>"
                 name = "password">
                 <input type = "hidden"
                 value = "<?php echo $_POST['gender'];?>"
@@ -140,7 +139,5 @@
 </html>
 <!--
 課題→
-性別が登録は0なのに女で表示されるのをなおす
-パスワードハッシュ化できないのなおす
 登録処理のエラー表示
 -->
