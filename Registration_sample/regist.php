@@ -155,7 +155,7 @@
             <input type="submit" value="確認する"/>
             <?php
             $error1="名前（姓）が未入力です。";
-            if(empty($_POST["family_name"])){
+            if(empty($_POST['family_name'])){
                 echo"$error1";
             }
             ?>
