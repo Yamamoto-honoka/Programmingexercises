@@ -4,7 +4,7 @@ $hashed_password = password_hash($password,PASSWORD_DEFAULT);
 ?>
 <?php
 mb_internal_encoding("utf8");
-$pdo = new PDO("mysql:dbname=programingexe01;host=localhost;",
+try{$pdo = new PDO("mysql:dbname=programingexe01;host=localhost;",
                "root","");
 $pdo ->exec("insert into userregistration(
 family_name,
@@ -34,6 +34,10 @@ values(
 '".$_POST['authority']."'
 );
 ");
+}
+catch(PDOException $e{
+    echo "エラーが発生したためアカウント登録ができません。";
+}
 ?>
 
 <!DOCTYPE html>
@@ -66,7 +70,3 @@ values(
     </footer>
     </body>
 </html>
-<!--課題→
-レイアウトを近づける→css編集
-削除フラグを入れる→日付と同じくSQL側で解決？
--->
