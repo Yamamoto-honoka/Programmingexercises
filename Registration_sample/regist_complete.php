@@ -35,7 +35,7 @@ values(
 );
 ");
 }
-catch(PDOException $e{
+catch(PDOException $e){
     echo "エラーが発生したためアカウント登録ができません。";
 }
 ?>
