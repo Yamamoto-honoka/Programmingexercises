@@ -51,7 +51,7 @@
         </div>
         <div>
             <label>メールアドレス</label>
-            <input type="text" class="text" size="35"
+            <input type="email" class="text" size="35"
             maxlength="100" name="mail"
             pattern="^[a-zA-Z0-9-]+@[a-zA-Z0-9-]+[a-zA-Z-]{2,}$"
             required>
